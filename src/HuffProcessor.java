@@ -103,7 +103,7 @@ public class HuffProcessor {
 		else {
 			
 			
-			codingHelper(HuffNode root.myLeft,"0",String[] encodings);
+			codingHelper(HuffNode left,"0",String[] encodings);
 		}
 	}
 	
