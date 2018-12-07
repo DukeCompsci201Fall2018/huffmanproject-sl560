@@ -210,7 +210,7 @@ public class HuffProcessor {
 				else
 					current = current.myRight;
 
-				if (current.myWeight==0) {
+				if (current.myWeight==1) {
 					if (current.myValue == PSEUDO_EOF) {
 						break;
 					} else {
