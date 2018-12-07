@@ -191,7 +191,7 @@ public class HuffProcessor {
 			int value = in.readBits(BITS_PER_WORD + 1);
 			System.out.println(value);
 
-			return new HuffNode(value, 0, null, null);
+			return new HuffNode(value, 1, null, null);
 		}
 
 	}
@@ -210,7 +210,7 @@ public class HuffProcessor {
 				else
 					current = current.myRight;
 
-				if (current.myValue > 0) {
+				if (current.myWeight==0) {
 					if (current.myValue == PSEUDO_EOF) {
 						break;
 					} else {
